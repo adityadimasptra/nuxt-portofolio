@@ -1,0 +1,66 @@
+.navbar {
+  width: 100%;
+  top: 0;
+  padding: 2% 5%;
+
+  .navbar-brand {
+    font-size: 2rem;
+    display: flex;
+    color: #f7fffd;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+
+  .nav-item {
+    top: 0;
+    bottom: 0;
+    margin: 10px 10px;
+    // color: #f7fffd !important;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #f7fffd;
+    }
+    @media (min-width: 992px) {
+      a {
+        text-decoration: none;
+        padding: 10px 10px;
+        margin: 0px 5px;
+        position: relative;
+        cursor: pointer;
+        color: #f7fffd;
+      }
+      /* Pull up animation */
+      a:before {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+        bottom: 0px;
+        content: "";
+        background: #fff;
+        opacity: 0.3;
+        transition: all 0.3s;
+      }
+
+      a:hover:before {
+        height: 100%;
+      }
+
+      .active:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        bottom: 0px;
+        content: "";
+        background: #fff;
+        opacity: 0.3;
+        transition: all 0.3s;
+      }
+    }
+  }
+}

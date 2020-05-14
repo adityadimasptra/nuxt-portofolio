@@ -1,0 +1,18 @@
+@import "navigation";
+@import "title";
+@import "footer";
+@import "experiences";
+
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+.container-fluid {
+  padding: 5% 5%;
+}
+
+.colored-section {
+  background-color: #fcba03;
+  color: #fff;
+}
+
